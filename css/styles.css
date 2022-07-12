@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Merriweather, serif; /*The first font is the default and the second one is incase for whatever reason the font doesnt load */
+  /* font-size: 200%; em and % are dynamic sizes */
+}
+
+h1 {
+  font-family: Great Vibes, cursive;
+  /*font-size: 5em;  not only will the size be applied but it will be added on top of the size of its container in this case the body because em and % are dynamic sizes
+  16px is a static size & 1em=16px 100%=16px are dynamic sizes, 5em and 500% are dynamic size measurments for e.g. fontsize, padding, margin etcetra and when used in the fontsize it will make the font change when you change the font size in the appearance in the settings*/
+  font-size: 5rem; /*to stop the dynamic size inheriting from its parent, we use rem which is root em*/
+  padding-top: 100px;
+  margin-bottom: -20px;
+  margin-top: -20px;
+  /* line-height: 2; line-height is used to set the distance between lines of text*/
+  /* margin-top: 0;   basically no margin */
+   /* margin: 0 auto;  the auto value of the margin property if for e.g., in this case right and left divides the horizontal space in the element's container equally so the item will be centered equally*/
+  /*If you have a single value after the margin property unless specified like margin-top, then it will be on all sides
+   if you specify two values the the first one will be top&bottom and the second will be right&left
+   if you specify 3 values then the order will be Top then right&left then bottom
+   if you specify 4 values then the order will be top, right, bottom, left*/
+}
+
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+h1, h2{
+  color: rgb(255,165,0);
+}
+.underline {
+  text-decoration: underline;
+}
+h3{
+  color: #11999E;
+}
+.top-container {
+  position: relative;
+  background-color: #EAF6F6;
+  /*the position is set relative because we want to position the top cloud relative to its container*/
+}
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 200px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 300px;
+  left: 200px;
+}
+
+.middle-container {
+  margin-top: 50px;
+
+}
+.skill-row {
+  width: 50%;
+  margin: 70px auto;
+  line-height: 2;
+
+}
+
+.profilepic {
+  height: 300px;
+}
+
+.Chess-img {
+  width: 40%;
+  float: left; /*The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it*/
+  margin-right: 30px;
+
+}
+
+.programming-img {
+  width: 40%;
+  float: right;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+/* .programming-comment {
+  clear: right; /*The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede it
+}*/
+hr{
+  border-style: dotted none none none;
+  background-color: white;
+  border-color: grey;
+  border-width: 4px;
+  width: 5%;
+  margin: 100px auto;
+}
+.bottom-container {
+  font-family: Montserrat;
+  background-color: #66BFBF;
+  color: #EAF6F6;
+  padding: 30px;
+}
+.contact-me {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 3;
+  font-family: Montserrat;
+}
+.btn {
+  background: #ced934;
+  background-image: -webkit-linear-gradient(top, #ced934, #2980b9);
+  background-image: -moz-linear-gradient(top, #ced934, #2980b9);
+  background-image: -ms-linear-gradient(top, #ced934, #2980b9);
+  background-image: -o-linear-gradient(top, #ced934, #2980b9);
+  background-image: linear-gradient(to bottom, #ced934, #2980b9);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+
+}
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+.contact-description {
+  font-family: Merriweather;
+}
+.footer-link {
+  color: #11999E;
+
+}
+.footer-paragraph {
+font-size: 10px;
+}
+/*  display property
+The display property specifies the display behavior (the type of rendering box) of an element.
+ display property values
+dsplay: block; in the display block the element take the entire line but you can change the height and width
+display: inline; in the inline display the element takes as much space as it needs only e.g., <span> <a>but you cannot change the height and width
+display:inline-block; in the display inline-block the element itself is formatted as an inline element, but you can apply height and width values
+*/
+/* common block elements:
+<p> paragraphs
+headers <h1> to <h6>
+<div> Divisions
+<ol>, <ul> <li> Lists and items
+<form> forms
+etcetra
+*/
+/* common inline elements:
+<span> spans
+<img> images
+<a> anchors
+etcetra
+*/
+/* css position property and its values- static, absolute, fixed & relative
+position:static; Default value. Elements render in order, as they appear in the document flow
+position:relative; The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
+position:absolute;	The element is positioned relative to its parent position like the <body> or the <div>, a child  element so "left:20px" adds 20 pixels to the parent's LEFT position
+position:fixed;	The element is fixed on the window even if you keep scrolling its position won't change*/
+
+/* The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it
+clear: right; /*The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede it */
